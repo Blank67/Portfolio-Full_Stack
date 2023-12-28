@@ -123,7 +123,6 @@ export const skills = [
 
 export const experiences = [
     {
-        id: 0,
         img: "https://media.licdn.com/dms/image/C4D0BAQFGRJslebbEbQ/company-logo_200_200/0/1653115660117?e=2147483647&v=beta&t=vbhsBTK9IbOEMRWztGc57NMYxpF96cim7yyXhS8eW28",
         role: "React Developer",
         company: "TLC DigiTech Pvt. Ltd.",
@@ -140,5 +139,38 @@ export const experiences = [
             "Next Js",
         ],
         doc: "",
+    },
+];
+
+export const projects = [
+    {
+        title: "Chat App",
+        date: "",
+        description:
+            "Chat App is a web application designed to streamline end-to-end communication. It provides a user-friendly interface for users to chat with each other. Users can also create a group to communicate.",
+        image: "https://s3-alpha.figma.com/hub/file/2610778840/5e9eddd9-5736-4945-9f55-20136583dc94-cover.png",
+        tags: [
+            "Eslint",
+            "TypeScript",
+            "React Js",
+            "MongoDb",
+            "Node Js",
+            "Express Js",
+            "Redux",
+        ],
+        category: "web app",
+        github: "",
+        webapp: "",
+    },
+];
+
+export const education = [
+    {
+        img: "https://media.licdn.com/dms/image/C4D0BAQFKDtueQF9mCg/company-logo_200_200/0/1650280597838/sgt_university_logo?e=2147483647&v=beta&t=t38s8WhW0LSC18MxGDWN3IhIUeYHPQu1tQbchBklM84",
+        school: "SGT University, Gurugram",
+        date: "Oct 2015 - Sep 2019",
+        grade: "",
+        desc: "I completed my Bachelor's degree in Computer Science and Engineering at SGT University, Gurugram. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
+        degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
     },
 ];

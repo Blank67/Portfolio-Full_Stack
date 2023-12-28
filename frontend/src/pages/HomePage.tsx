@@ -3,6 +3,9 @@ import NavBar from "../components/NavBar";
 import HeroSection from "../components/HeroSection";
 import Skills from "../components/Skills";
 import Experience from "../components/Experience";
+import Projects from "../components/Projects";
+import { useState } from "react";
+import Education from "../components/Education";
 
 //STYLED-COMPONENT START
 const Body = styled.div`
@@ -27,6 +30,7 @@ const Wrapper = styled.div`
 //STYLED-COMPONENT END
 
 const HomePage = () => {
+    const [openModal, setOpenModal] = useState({ state: false, project: null });
     return (
         <>
             <NavBar />
@@ -35,6 +39,10 @@ const HomePage = () => {
                 <Wrapper>
                     <Skills />
                     <Experience />
+                </Wrapper>
+                <Projects openModal={openModal} setOpenModal={setOpenModal} />
+                <Wrapper>
+                    <Education />
                 </Wrapper>
             </Body>
         </>
