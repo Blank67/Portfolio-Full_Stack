@@ -26,7 +26,7 @@ const Education = () => {
                 <TimelineSection>
                     <Timeline>
                         {education.map((edu, index) => (
-                            <TimelineItem>
+                            <TimelineItem key={index}>
                                 <TimelineContent sx={{ py: "12px", px: 2 }}>
                                     <EducationCard education={edu} />
                                 </TimelineContent>
