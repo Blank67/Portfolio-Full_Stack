@@ -86,13 +86,19 @@ const ProjectDetails = (props: any) => {
                         </>
                     )}
                     <ButtonGroup>
-                        <Button dull="true" href={project?.github} target="new">
+                        <Button
+                            dull="true"
+                            href={project?.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             View Code
                         </Button>
                         <Button
                             dull="false"
                             href={project?.webapp}
-                            target="new"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             View Live App
                         </Button>

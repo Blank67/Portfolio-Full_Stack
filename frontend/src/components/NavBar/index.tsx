@@ -43,7 +43,13 @@ const NavBar = () => {
                     <NavLink href="#education">Education</NavLink>
                 </NavItems>
                 <ButtonContainer>
-                    <GitHubButton>Github Profile</GitHubButton>
+                    <GitHubButton
+                        href={bio.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Github Profile
+                    </GitHubButton>
                 </ButtonContainer>
                 {isOpen && (
                     <MobileMenu isOpen={isOpen}>

@@ -41,7 +41,11 @@ const HeroSection = () => {
                             </Span>
                         </TextLoop>
                         <SubTitle>{bio.description}</SubTitle>
-                        <ResumeButton href={bio.resume} target="display">
+                        <ResumeButton
+                            href={bio.resume}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Check Resume
                         </ResumeButton>
                     </HeroLeftContainer>

@@ -11,7 +11,7 @@ import {
     Title,
     Wrapper,
 } from "./EducationStyledComponents";
-import { education, experiences } from "../../data/profileData";
+import { education } from "../../data/profileData";
 import EducationCard from "../Cards/EducationCard";
 
 const Education = () => {
@@ -35,7 +35,7 @@ const Education = () => {
                                         variant="outlined"
                                         color="secondary"
                                     />
-                                    {index !== experiences.length - 1 && (
+                                    {index !== education.length - 1 && (
                                         <TimelineConnector
                                             style={{ background: "#854CE6" }}
                                         />
