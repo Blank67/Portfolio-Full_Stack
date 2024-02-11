@@ -95,10 +95,15 @@ const Contact = () => {
         e.preventDefault();
         const isFormDataValid = validateFormData();
         if (isFormDataValid) {
-            const serviceId = "service_j62whtd";
-            const templateId = "template_y45xrzu";
-            const publicKey = "Q-5jS7eHmHhjTlxEP";
-            const payload = { ...formData, mNane: "Himanshu Test 01" };
+            const serviceId = "service_bwkw50k";
+            const templateId = "template_2bqctu9";
+            const publicKey = "PKPGLn6xb80TTb-xu";
+            const payload = {
+                sender_name: formData.name,
+                sender_email: formData.email,
+                subject: formData.subject,
+                message: formData.message,
+            };
             //We can also use REST API for below request. Follow documentation.
             try {
                 const response = await emailjs.send(
