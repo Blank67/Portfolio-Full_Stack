@@ -14,7 +14,7 @@ import {
     Title,
 } from "./HeroSectionStyledComponents";
 import Typewriter from "typewriter-effect";
-import HeroImg from "../../assets/hero-placeholder.png";
+import HeroImg from "../../assets/hero-img.jpeg";
 
 const HeroSection = () => {
     return (
