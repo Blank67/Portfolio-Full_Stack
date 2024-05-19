@@ -42,7 +42,7 @@ const HeroSection = () => {
                         </TextLoop>
                         <SubTitle>{bio.description}</SubTitle>
                         <ResumeButton
-                            href={bio.resume}
+                            href={process.env.REACT_APP_RESUME_LINK}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
